@@ -1,10 +1,10 @@
-# BankManagementSystem
+# Bank Management System with Fraud-Check Simulation
 
-## Overview
+## 1. Overview
 
-A simple **Java-based Bank Management System** that allows users to manage bank accounts and perform basic banking operations. The system also includes a **rule-based fraud-check simulation** to identify suspicious withdrawal transactions.
+This project is a Java-based **Bank Management System** that provides basic banking operations through a console-based interface. It also includes a simple rule-based fraud-check simulation for identifying suspicious withdrawal transactions.
 
-## Features
+## 2. Features
 
 * Create a new bank account
 * Deposit money
@@ -14,80 +14,64 @@ A simple **Java-based Bank Management System** that allows users to manage bank 
 * Display flagged accounts
 * Delete an account
 * Track withdrawal history
-* Detect suspicious withdrawals
+* Detect suspicious transactions
 * Flag suspicious accounts for review
-* Menu-driven console interface
 
-## Fraud-Check Simulation
-
-The system checks withdrawals using simple rules:
-
-* Withdrawal above **₹50,000**
-* Withdrawal much higher than the account's usual average
-* Multiple withdrawals in the same session
-* Withdrawal that uses nearly the entire account balance
-
-Suspicious transactions generate a warning and allow the user to either continue or cancel the transaction.
-
-> **Note:** The fraud detection is an educational simulation and is not a real banking security system.
-
-## Technologies Used
+## 3. Technologies/Tools Used
 
 * **Java**
 * **Object-Oriented Programming (OOP)**
 * **ArrayList**
 * **Scanner**
-* Java Collections
+* **VS Code** / any Java IDE
+* **JDK**
 
-## Project Structure
+## 4. Installation & Run
 
-```text
-BankManagementSystem/
-│
-├── BankManagementSystemWithFraudCheck.java
-└── README.md
+### Step 1: Install Java
+
+Install **JDK** on your computer and verify it using:
+
+```bash
+java -version
 ```
 
-## How to Run
+### Step 2: Open the Project
 
-### 1. Compile the program
+Open the project folder in VS Code.
+
+### Step 3: Compile the Program
+
+Open the terminal and run:
 
 ```bash
 javac BankManagementSystemWithFraudCheck.java
 ```
 
-### 2. Run the program
+### Step 4: Run the Program
 
 ```bash
 java BankManagementSystemWithFraudCheck
 ```
 
-## Main Menu
+## 5. Testing
 
-```text
-===== Simple Bank Management System =====
+The application can be tested through the console menu.
 
-1. Create New Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. Display All Accounts
-6. Display Flagged Accounts
-7. Delete Account
-8. Exit
-```
+Test the following operations:
 
-## Purpose
+1. Create an account with an initial deposit.
+2. Deposit money into the account.
+3. Withdraw money from the account.
+4. Try withdrawing more than the available balance.
+5. Check the account balance.
+6. Perform a large withdrawal to test the fraud warning.
+7. Display flagged accounts.
+8. Delete an account.
+9. Exit the application.
 
-This project was developed for educational purposes to demonstrate **Java programming, Object-Oriented Programming, collections, account management, and basic fraud-detection logic**.
+## 6. Screenshots
 
-## Future Improvements
+## 7. Note
 
-* Database integration
-* User login and authentication
-* Transaction records
-* JUnit testing
-* Multithreading
-* Custom exception handling
-* File-based audit logging
-* Graphical User Interface (GUI)
+The fraud detection feature is an **educational simulation** using simple predefined rules. It is not intended to be used as a real banking security system.
