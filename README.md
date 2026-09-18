@@ -70,8 +70,6 @@ Test the following operations:
 8. Delete an account.
 9. Exit the application.
 
-## 6. Screenshots
-
 ## 7. Note
 
 The fraud detection feature is an **educational simulation** using simple predefined rules. It is not intended to be used as a real banking security system.
